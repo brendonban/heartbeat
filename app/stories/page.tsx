@@ -76,4 +76,38 @@ export default function StoriesPage() {
         <section className="content-section">
           <p className="eyebrow">OUR COMMITMENT</p>
 
-          <h2>Stories shared
+          <h2>Stories shared with care.</h2>
+
+          <p>
+            Personal stories deserve respect. We aim to approach every
+            contribution with care for the storyteller's dignity, privacy,
+            and consent. Contributors should understand how their stories may
+            be used and have a say in what they share.
+          </p>
+
+          <p>
+            We will not publish fabricated testimonials or present fictional
+            experiences as real community stories.
+          </p>
+        </section>
+
+        <section className="impact-preview">
+          <p className="eyebrow">HAVE A STORY TO SHARE?</p>
+
+          <h2>Your voice can make a difference.</h2>
+
+          <p>
+            If you are interested in contributing a reflection or collaborating
+            with Project Heartbeat, we'd love to hear from you.
+          </p>
+
+          <Link href="/get-involved" className="text-link">
+            Get involved <span aria-hidden="true">↗</span>
+          </Link>
+        </section>
+      </main>
+
+      <SiteFooter />
+    </>
+  );
+}
