@@ -11,7 +11,7 @@ import ScrollBar from "./components/ScrollBar";
 export const metadata: Metadata = {
   title: { default: "Project Heartbeat", template: "%s · Project Heartbeat" },
   description:
-    "Youth-led sessions that help young people in Malaysia talk openly about HIV, sexual health and emotional health. Run by AIESEC in UPM with Ruang Malaysia.",
+    "Youth-led project that help young people in Malaysia talk openly about HIV, sexual health and emotional health. Run by AIESEC in UPM with Ruang Malaysia.",
   icons: { icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💚</text></svg>" },
 };
 
