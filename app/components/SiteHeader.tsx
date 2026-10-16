@@ -1,11 +1,39 @@
 import Link from "next/link";
+import { siteConfig } from "../site-config";
 
-const navItems = [
-  { href: "/about", label: "About" },
-  { href: "/explore", label: "Explore" },
-  { href: "/stories", label: "Stories" },
-  { href: "/programme", label: "Programme" },
-  { href: "/impact", label: "Impact" },
+const navigationItems = [
+  { label: "Home", href: "/", visible: siteConfig.navigation.home },
+  { label: "About", href: "/about", visible: siteConfig.navigation.about },
+  {
+    label: "Explore",
+    href: "/explore",
+    visible: siteConfig.navigation.explore,
+  },
+  {
+    label: "Stories",
+    href: "/stories",
+    visible: siteConfig.navigation.stories,
+  },
+  {
+    label: "Programme",
+    href: "/programme",
+    visible: siteConfig.navigation.programme,
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+    visible: siteConfig.navigation.resources,
+  },
+  {
+    label: "Impact",
+    href: "/impact",
+    visible: siteConfig.navigation.impact,
+  },
+  {
+    label: "Get Involved",
+    href: "/get-involved",
+    visible: siteConfig.navigation.getInvolved,
+  },
 ];
 
 export default function SiteHeader() {
@@ -16,22 +44,13 @@ export default function SiteHeader() {
       </Link>
 
       <nav className="navigation" aria-label="Main navigation">
-        {navItems.map((item) => (
-          <Link href={item.href} key={item.href}>
-            {item.label}
-          </Link>
-        ))}
-
-        <details className="more-menu">
-          <summary>
-            More <span aria-hidden="true">↗</span>
-          </summary>
-
-          <div className="more-dropdown">
-            <Link href="/resources">Resources</Link>
-            <Link href="/get-involved">Get involved</Link>
-          </div>
-        </details>
+        {navigationItems
+          .filter((item) => item.visible)
+          .map((item) => (
+            <Link href={item.href} key={item.href}>
+              {item.label}
+            </Link>
+          ))}
       </nav>
     </header>
   );
