@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
         <p className="by">Run by <b>AIESEC in UPM</b> with <b>Ruang Malaysia</b>.</p>
         <p className="lede">
-          Youth-led sessions that help young people in Malaysia talk openly about HIV, sexual health and emotional health, and know where to find support.
+          Youth-led project that help young people in Malaysia talk openly about HIV, sexual health and emotional health, and know where to find support.
         </p>
         <LineOfChoice />
         <div className="row">
