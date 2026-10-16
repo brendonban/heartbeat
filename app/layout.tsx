@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "Project Heartbeat | Health Conversations That Matter",
+  title: "💚 Project Heartbeat",
   description:
-    "A youth-led initiative exploring health, identity, and the conversations that matter to young people.",
+    "A youth-led project exploring health and the conversations that matter to young people.",
 };
 
 export default function RootLayout({
